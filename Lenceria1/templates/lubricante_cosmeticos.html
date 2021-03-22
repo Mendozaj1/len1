@@ -1,0 +1,36 @@
+{% extends 'index.html'%}
+
+{% block content%}
+
+{% for cometicos in lubricante_cosmetico%}
+<a href="{% url 'contacto'%}">
+    <div id= "contenido">
+    {% if  cometicos.imagen != 'null' and  cometicos.imagen.url|length >= 1%}
+        <img src="{{ cometicos.imagen.url}}"
+    {% endif%} 
+    
+    <p id="Titulo_articulo">
+    <h2>{{ cometicos.Titulo}}</h2>
+    </P>
+    
+    <p id="texto">
+    {{ cometicos.Contenido }}
+    </p>
+
+    <p id="precio">
+    {{cometicos.Numero}}
+    </p>
+
+    {% if cometicos.Estado %}      
+    {% else %}
+    <br>
+        <strong> Agotado </strong>
+    {% endif %}
+    
+    </div>
+    </a>
+
+{% endfor %}
+
+
+{% endblock %}

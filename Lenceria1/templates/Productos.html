@@ -1,0 +1,67 @@
+{% extends 'index.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENCERIA ORELLANA</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
+    
+</head>
+<body>
+{% block content%}
+<div class="category1">
+    <div id= "Category">
+    <a href="{% url 'Jugetes_sexuales' %} ">
+        <img src="{% static 'css/Juguetes.jpg' %}"
+    <p id="Titulo_articulo">
+    <h2>Juguetes sexuales</h2>
+    </P>
+    </a>
+    </div>
+
+    <div id= "Category">
+    <a href="{% url 'Despedida_soltera' %} ">
+        <img src="{% static 'css/1.png' %}"
+    <p id="Titulo_articulo">
+    <h2>Despedida de soltera</h2>
+    </P>
+    </a>
+    </div>
+
+
+<div id= "Category">
+    <a href="{% url 'Lenceria_hombre' %} ">
+        <img src="{% static 'css/Hombre.jpg' %}"
+    <p id="Titulo_articulo">
+    <h2>Lenceria para Hombre</h2>
+    </P>
+    </a>
+    </div>
+
+<div id= "Category">
+    <a href="{% url 'Lenceria_mujer' %} ">
+        <img src="{% static 'css/Mujer.jpg' %}"
+    <p id="Titulo_articulo">
+    <h2>Lenceria para Mujer</h2>
+    </P>
+    </a>
+    </div>
+
+<div id= "Category">
+    <a href="{% url 'Lubricante_cosmeticos' %} ">
+        <img src="{% static 'css/Cosmetico.jpg' %}"
+    <p id="Titulo_articulo">
+    <h2>Lubricantes y cosmeticos</h2>
+    </P>
+    </a>
+    </div>
+</div>
+    
+
+
+{% endblock %}
+</body>
+</html>

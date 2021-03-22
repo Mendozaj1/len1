@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENCERIA ORELLANA</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/e400da5939.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+</head>
+<body>
+<header>
+<div>
+<img src="{% static 'css/logo.png'%}"/>
+<h1 class="animate__animated animate__bounceInDown ">LENCERIA "La bonita"</h1>
+<h2 class="animate__animated animate__bounceInLeft ">Tienda Online</h2>
+</div>
+
+
+</header>
+<nav id="navegacion">
+<ul>
+    <li>
+    <a href="{% url 'producto' %} ">Categoria</a> 
+    </li>
+    <li>
+    <a href="{% url 'index' %} ">Inicio</a>
+    </li>
+    <li>
+    <a href="{% url 'contacto' %} ">Contacto</a>
+    </li>
+</ul>
+</nav>
+</header>
+
+<div id='box'>
+{% block content%}
+    <div >
+        <h1 class="Lenceria">Lenceria "La bonita"</h1> 
+        <h1 class="Lenceria1" > BIENVENIDOS A LA TIENDA ONLINE </h1>
+        <p class="descripcion1">
+        El sexo es una de las sensaciones más inspiradoras que podemos experimentar. No solo ofrecemos productos, si no experiencias inolvidables que te ayuden en tu relación, tu vida íntima, tus travesuras .. 
+        Todo en lencería y juguetes eróticos garantizados entregas discretas y envíos a todas partes del país <br>
+        <img src="{% static 'css/3.png'%}"/>
+        </p>
+    </div>
+{% endblock %}
+</div>
+
+</body>
+</html>

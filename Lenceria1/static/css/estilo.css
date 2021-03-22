@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e7e9eb;
+}
+header{
+    max-width: 100%;
+    background-color: black;
+    font-size: 20px;
+    height: 120px;
+    color: #d1d4d6;
+    padding: 5px;
+    font-family: cursive;
+}
+header h1{
+    color: #ffb4bf;
+    padding-right: 50%;
+    font-family: 'Kaushan Script', cursive;
+    width: 550px;
+}
+
+header h2{  
+    max-width: 30%;
+    position: relative;
+    bottom: 10px;
+    color: #d1d4d6;
+    padding-left: 390px;
+    margin-bottom: 90px;
+    font-family: 'Kaushan Script', cursive;
+}
+header img{
+    position: relative;
+    bottom: 10px;
+    width: 150px;
+    float: left;
+}
+#navegacion{
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    width: auto;
+    height: 30px;
+}
+nav{
+    width: 20px;
+    background-color: #1b1e1f;
+    border: 1px solid #333;
+    margin-left: auto;
+    box-shadow: 0px 22px 22px gray;
+}
+nav  ul  li a{
+    text-decoration: none;
+    color: #d1d4d6;
+}
+
+nav  ul  li a:hover{
+    color: aqua;
+    transition: all 300ms;
+}
+nav  ul{
+    list-style: none;
+    text-decoration: none;
+    margin-left: center;
+}
+
+nav  ul  li{
+    line-height: 30px;
+    float: left;
+    margin-left: 40px;
+}
+
+#box{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+/* Todo lo que tiene que ver con el producto */
+#box #contenido{
+    display: grid;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background: #f3f4f5;
+    top: 20px;
+    height: 95%; 
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* botoon de watsapp */
+#watsapp{
+    background: green;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+#watsapp a{
+    text-decoration: none;
+    color: #d1d4d6;
+}
+#watsapp a:hover{
+    color: aqua;
+}
+#productos{
+    background-color: #1b1e1f;
+}
+
+#box #contenido #texto{
+    font-size: 15px;
+}
+#box a{
+    text-decoration: none;
+    color: #000000;
+}
+#box h2 a{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+#box #contenido img{
+    height: 200px;
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+}
+#box #contenido h1{
+    color: black;
+}
+
+#box #contenido:hover{
+    box-shadow: 0px 0px 10px #000000;
+    transition: all 400ms;  
+}
+#contenido{
+    font-size: 20px;
+}
+/* Texto del inicio */
+#box .Lenceria{
+    margin-top: 40px;
+    width: 500px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+#box .Lenceria1{
+    width: 900px;
+    margin-left: 300px;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+#box .descripcion1{
+    background: #1b1e1f;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 40%;
+    width: 1200px;
+    color: #d1d4d6;
+    border-radius: 20px;
+}
+#box .descripcion1 img{
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: 40px;
+}
+/* contacto */
+#pedido{
+    font-family: 'Kaushan Script', cursive;
+    width: 1000px;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.img_final img{
+    position: relative;
+    bottom: 200px;
+    box-shadow: 0px 0px 40px #000000;
+    width: 600px;
+    margin-left: 550px;
+    border-radius: 30px;
+}
+/* CATEGORIA */
+#box #Category{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    background: #f3f4f5;
+    top: 20px;
+    height: 350px; 
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Kaushan Script', cursive;
+}
+#box #Category img{
+    height: 250px;
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+}
+#box #Category h2{
+    color: rgb(136, 2, 2);
+}
+
+
+#box #Category:hover{
+    box-shadow: 0px 0px 10px #000000;
+    transition: all 400ms;  
+}
+#Category{
+    font-size: 20px;
+    list-style: none;
+}
+/* ---- Categoria ----*/
+.category1{
+    display: grid;
+    grid-template-columns: 80% 80% 80% 80% 80%;
+}
+#redes{
+    position: relative;
+    font-size: 30px;
+    width: 1000px;
+    top: 300px;
+    right: 250px;
+    height: 500px;
+}
+#redes a{
+    color: rgb(123, 22, 218);
+}
+#redes a:hover{
+    color: rgb(2, 0, 148);
+}
+#precio {
+    color: pink;
+    font-size: 30px;
+    background-color: #000000;
+    margin-top: auto;
+    border-radius: 15px;
+    text-align: center;
+    width: 35%;
+    height: auto;
+    font-family: 'Lobster', cursive;
+}
+#box #contenido strong{
+    position: relative;
+    left: 55%;
+    color: red;
+    font-size: 30px;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive para celulares  */
+
+@media screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        max-width: 100%;
+        background-color: #000000;
+        height: 100px;
+        color: #d1d4d6;
+        padding: 5px;
+        font-family: cursive;
+    }
+    header h1{
+        position: relative;
+        top: 15px;
+        max-width: 100%;
+        color: #d1d4d6;
+        font-size: 20px;
+        width: 50%;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #redes{
+        font-size: 10px;
+    }
+    #redes a{
+        color: rgb(255, 0, 0);
+    }
+    
+    header h2{  
+        max-width: 100%;
+        position: relative;
+        top: 10px;
+        width: 35%;
+        right: 250px;
+        margin-right: 100px;
+        color: #d1d4d6;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 25px;
+    }
+    header img{
+        margin-top: 10px;
+        width: 120px;
+        float: left;
+    }
+    #navegacion{
+        font-size: 25px;
+    }
+    nav{
+        background-color: #1b1e1f;
+        border: 1px solid #333;
+        box-shadow: 0px 22px 22px gray;
+    }
+    nav  ul  li a{
+        text-decoration: none;
+        color: #d1d4d6;
+    }
+
+    nav  ul{
+        position: relative;
+        right: 50px;
+        list-style: none;
+        text-decoration: none;
+        float: left;
+    }
+    #box{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+    /* Todo lo que tiene que ver con el producto */
+    #box #contenido{
+        position: relative;
+        margin-left: 25px;
+        margin-top: 20px;
+        width: 300px;
+        margin-bottom: 5px;
+        background: #f3f4f5;
+        top: 20px;
+        height: auto; 
+        border-radius: 10px;
+
+    }
+    #watsapp{
+        width: 60%;
+        font-size: 25px;
+    }
+    /* botoon de watsapp */
+    #watsapp a{
+        text-decoration: none;
+        color: #d1d4d6;
+    }
+    #watsapp a:hover{
+        color: aqua;
+    }
+    #productos{
+        background-color: #1b1e1f;
+    }
+    #box #contenido strong{
+        text-decoration: none;
+        font-size: 30px;
+    }
+    #box #contenido #texto{
+        font-size: 15px;
+    }
+    #box h2 a{
+        color: blueviolet;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    #box #contenido img{
+        height: 200px;
+        position: relative;
+        width: 100%;
+        border-radius: 7px;
+    }
+    #box #contenido a{
+        text-decoration: none;
+    }
+    #box #contenido h1{
+        color: black;
+    }
+    
+    #box #contenido:hover{
+        box-shadow: 0px 0px 10px #000000;
+        transition: all 400ms;  
+    }
+    #box a{
+        list-style: none;
+    }
+    #contenido{
+        font-size: 20px;
+    }
+    #box h2 a{
+        color: black;
+    }
+    #titulo_articulo{
+        width: 300px;
+    }
+    /* Texto del inicio */
+    #box .Lenceria{
+        width: 50%;
+        margin-top: 30px;
+        font-size: 40px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #box .Lenceria1{
+        width: 55%;
+        font-size: 25px;
+        font-family: 'Kaushan Script', cursive;
+        margin-left: 60px;
+    }
+    #box .descripcion1{
+        position: relative;
+        right: 20px;
+        text-align: center;
+        left: 15px;
+        background: #000000;
+        font-size: 20px;
+        margin-top: 30px;
+        height: 25%;
+        width: 88%;
+        color: #d1d4d6;
+        border-radius: 20px;
+    }
+    #box .descripcion1 img{
+        position: relative;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+        border-radius: 10px;
+        right: 100px;
+        top: 70px;
+        width: 400px;
+    }
+    /* contacto */
+    #pedido{
+        position: relative;
+        right: 30px;
+        font-family: 'Kaushan Script', cursive;
+        margin-top: 40px;
+        font-size: 15px;
+        width: 90%;
+    }
+    .img_final img{
+        width: 300px;
+        height: 400px;
+    }
+    div .img_final{
+        position: relative;
+        top: 50px;
+        right: 150px;
+        width: 300px;        
+    }
+    /* CATEGORIA */
+#box #Category{
+    margin-bottom: 5px;
+    background: #f3f4f5;
+    width: 200px;
+    top: 20px;
+    height: auto; 
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+#box #Category img{
+    height: 200px;
+    width: 100%;
+    border-radius: 7px;
+}
+#box #Category:hover{
+    box-shadow: 0px 0px 10px #000000;
+    transition: all 400ms;  
+}
+#Category{
+    font-size: 15px;
+    list-style: none;
+}
+.category1{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+#redes{
+    position: relative;
+    font-size: 30px;
+    width: 600px;
+    top: 300px;
+    right: 300px;
+}
+#redes a{
+    color: rgb(123, 22, 218);
+}
+#redes a:hover{
+    color: rgb(2, 0, 148);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 360px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        max-width: 100%;
+        background-color: #000000;
+        height: 50px;
+        padding: 5px;
+        font-family: cursive;
+    }
+    header h1{
+        position: relative;
+        top: 10px;
+        right: 30px;
+        max-width: 100%;
+        color: #d1d4d6;
+        font-size: 15px;
+        width: 60%;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    header h2{  
+        max-width: 100%;
+        position: relative;
+        top: 10px;
+        width: 30%;
+        color: #d1d4d6;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 15px;
+    }  
+    header img{
+        position: relative;
+        margin-top: 10px;
+        width: 60px;
+        left: 280px;
+    }
+    #navegacion{
+        font-size: 20px;
+    }
+    nav{
+        background-color: #1b1e1f;
+        border: 1px solid #333;
+        box-shadow: 0px 22px 22px gray;
+    }
+    nav  ul  li a{
+        text-decoration: none;
+        color: #d1d4d6;
+    }
+
+    nav  ul{
+        position: relative;
+        bottom: 5px;
+        right: 30px;
+        list-style: none;
+        text-decoration: none;
+        float: left;
+    }
+    #box{
+        display: grid;
+        grid-template-columns: auto ;
+        height: auto;
+    }
+    /* Todo lo que tiene que ver con el producto */
+    #box #contenido{
+        position: relative;
+        margin-left: 25px;
+        margin-top: 20px;
+        width: 300px;
+        margin-bottom: 5px;
+        background: #f3f4f5;
+        top: 20px;
+        height: auto; 
+        border-radius: 10px;
+
+    }
+    /* botoon de watsapp */
+    #watsapp{
+        background: green;
+        border: 1px solid black;
+        border-radius: 40px;
+        height: 40px;
+        width: 150px;
+        text-align: center;
+        font-size: 15px;
+    }
+    #watsapp a{
+        text-decoration: none;
+        color: #d1d4d6;
+    }
+    #watsapp a:hover{
+        color: aqua;
+    }
+    #productos{
+        background-color: #1b1e1f;
+    }
+    #box a{
+        text-decoration: none;
+    }
+    #box a #Titulo_articulo{
+        color: #000000;
+    }
+    #box h2 a{
+        color: black;
+    }
+    #box #contenido strong{
+        text-decoration: none;
+        font-size: 30px;
+    }
+    #box #contenido #texto{
+        font-size: 15px;
+    }
+    #box #titulo_articulo a{
+        color: rgb(87, 86, 88);
+        font-size: 30px;
+        text-decoration: none;
+    }
+    #box #contenido img{
+        height: 200px;
+        position: relative;
+        width: 100%;
+        border-radius: 7px;
+    }
+    #box #contenido a{
+        text-decoration: none;
+    }
+    #box #contenido h1{
+        color: black;
+    }
+    #box #contenido:hover{
+        box-shadow: 0px 0px 10px #000000;
+        transition: all 400ms;  
+    }
+    #contenido{
+        font-size: 20px;
+        color: black;
+    }
+    #titulo_articulo{
+        width: 300px;
+    }
+    /* Texto del inicio */
+    #box .Lenceria{
+        width: 50%;
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #box .Lenceria1{
+        width: 50%;
+        font-size: 10px;
+        font-family: 'Kaushan Script', cursive;
+        margin-left: 20px;
+    }
+    #box .descripcion1{
+        position: relative;
+        background: #1b1e1f;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 30px;
+        height: 50%;
+        width: 70%;
+        color: #d1d4d6;
+        border-radius: 20px;
+    }
+    #box .descripcion1 img{
+        position: absolute;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+        border-radius: 10px;
+        width: 200px;
+        opacity: 0.1;
+
+    }
+    /* contacto */
+    #pedido{
+        position: relative;
+        right: 30px;
+        font-family: 'Kaushan Script', cursive;
+        margin-top: 40px;
+        font-size: 15px;
+        width: 70%;
+    }
+    #pedido h1{
+        font-size: 20px;
+    }
+    .img_final img{
+        position: absolute;
+        top: 5px;
+        right: 350px;
+        width: 200px;
+    }
+    .img_final{ 
+        width: 10px;
+    }
+    /* CATEGORIA */
+#box #Category{
+    margin-bottom: 5px;
+    background: #f3f4f5;
+    width: 150px;
+    top: 20px;
+    height: 250px; 
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+#box #Category img{
+    height: 150px;
+    width: 100%;
+    border-radius: 7px;
+}
+#box #Category:hover{
+    box-shadow: 0px 0px 10px #000000;
+    transition: all 400ms;  
+}
+#Category{
+    font-size: 15px;
+    list-style: none;
+}
+.category1{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#redes{
+    position: relative;
+    font-size: 30px;
+    width: 330px;
+    top: 50px;
+    left: 20px;
+}
+#redes a{
+    color: rgb(123, 22, 218);
+}
+#redes a:hover{
+    color: rgb(2, 0, 148);
+}
+
+}

@@ -1,0 +1,32 @@
+{% extends 'index.html'%}
+
+{% block content%}
+{% for juguetes in jugete%}
+    <div id= "contenido">
+     <a href="{% url 'contacto'%}">
+    {% if  juguetes.imagen != 'null' and  juguetes.imagen.url|length >= 1%}
+        <img src="{{ juguetes.imagen.url}}"
+    {% endif%} 
+    
+    <p id="Titulo_articulo">
+    <h2><a href="{% url 'contacto'%}">{{ juguetes.Titulo}}</a></h2>
+    </P>
+    
+    <p id="texto">
+    {{juguetes.Contenido}}
+    </p>
+    <p id="precio">
+    {{juguetes.Numero}}
+    </p>
+    {% if  juguetes.Estado %}      
+    {% else %}
+    <br>
+        <strong> Agotado </strong>
+    {% endif %}
+    </a>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}

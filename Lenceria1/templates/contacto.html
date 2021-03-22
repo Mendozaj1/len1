@@ -1,0 +1,37 @@
+{% extends 'index.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENCERIA ORELLANA</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
+    
+</head>
+<body>
+{% block content %}
+<div id="pedido"> 
+<h1>Envios para todo el Ecuador</h1>
+<h2> Has tu pedido aqui: </h2>
+<div id="watsapp1">
+<button id="watsapp"><a href="https://wa.me/+593980456830?text=Me interesaria comprar un producto."><i class="fab fa-whatsapp"> Realice su pedido</i></a></button>
+</div>
+<div class="img_final">
+<img src="{% static 'css/1.png' %}"/>
+</div>
+</div>
+<p id="redes">
+siguenos en: 
+<br>
+<a href="https://www.facebook.com/lemceria.orellana"><i class="fab fa-facebook"></i> facebook, </a> 
+
+<a href="https://instagram.com/lenceria_orellana?igshid=3v537gwdbzcc"><i class="fab fa-instagram"></i> Instagram</a>
+</p>
+
+{% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% extends 'index.html'%}
+
+{% block content%}
+
+{% for Hombre in len_hombre%}
+    <div id= "contenido">
+    <a href="{% url 'contacto'%}">
+    {% if  Hombre.imagen != 'null' and  Hombre.imagen.url|length >= 1%}
+        <img src="{{ Hombre.imagen.url}}"
+    {% endif%} 
+    
+    <p id="Titulo_articulo">
+    <h2><a href="{% url 'contacto'%}">{{ Hombre.Titulo}}</a></h2>
+    </P>
+    
+    <p id="texto">
+    {{ Hombre.Contenido}}
+    </p>
+    <p id="precio">
+    {{Hombre.Numero}}
+    </p>
+    {% if  Hombre.Estado %}      
+    {% else %}
+    <br>
+        <strong> Agotado </strong>
+    {% endif %}
+    </a>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}

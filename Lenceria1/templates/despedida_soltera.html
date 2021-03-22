@@ -1,0 +1,36 @@
+{% extends 'index.html'%}
+
+{% block content%}
+
+{% for solteras in soltera%}
+    <div id= "contenido">
+     <a href="{% url 'contacto'%}">
+    {% if  solteras.imagen != 'null' and solteras.imagen.url|length >= 1%}
+        <img src="{{ solteras.imagen.url}}"
+    {% endif%} 
+    
+    <p id="Titulo_articulo">
+    <h2><a href="{% url 'contacto'%}">{{ solteras.Titulo}}</a></h2>
+    </P>
+    
+    <p id="texto">
+    {{ solteras.Contenido}}
+    </p>
+
+    <div id="precio1">
+    <p id="precio">
+    {{solteras.Numero}}
+    </p>
+    {% if  solteras.Estado %}      
+    {% else %}
+    <br>
+        <strong> Agotado </strong>
+    {% endif %}
+    </div>
+    </a>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}
